@@ -39,7 +39,7 @@ app.use(express.json());
 
 
 app.get('/',(req,res)=>{
-    //res.send(database.user);
+    res.send('it is working');
 })
 //signin
 app.post('/signin',(req, res)=>{signin.handleSignIn(req, res, db, bcrypt)})
